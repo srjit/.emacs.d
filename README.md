@@ -89,7 +89,7 @@ git clone --depth 1 git@github.com:srjit/.emacs.d.git ~/.emacs.d
 ```
 
 or download the [zip
-package](https://github.com/seagle0128/.emacs.d/archive/master.zip) directly and
+package](https://github.com/srjit/.emacs.d/archive/master.zip) directly and
 extract to `~/.emacs.d`.
 
 Then start Emacs. Wait for a while to install packages at the first startup. Enjoy! :smile:
