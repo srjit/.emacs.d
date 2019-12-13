@@ -66,11 +66,9 @@
                 elfeed-db-directory (locate-user-emacs-file ".elfeed")
                 elfeed-show-entry-switch #'pop-to-buffer
                 elfeed-show-entry-delete #'delete-window
-                elfeed-feeds '(("https://planet.emacslife.com/atom.xml" planet emacslife)
-                               ("http://www.masteringemacs.org/feed/" mastering)
-                               ("https://oremacs.com/atom.xml" oremacs)
-                               ("https://pinecast.com/feed/emacscast" emacscast)
-                               ("https://www.reddit.com/r/emacs.rss" reddit)))
+                elfeed-feeds '(("http://feeds.feedburner.com/blogspot/gJZg" ml)
+                               ("https://machinelearningmastery.com/rss-feed/" ml)
+                               ("https://xkcd.com/atom.xml" comics)))
     :config (push elfeed-db-directory recentf-exclude)))
 
 ;; Another Atom/RSS reader
@@ -79,11 +77,9 @@
   :bind ("C-x W" . newsticker-show-news)
   :hook (newsticker-treeview-item-mode . centaur-read-mode)
   :init (setq newsticker-url-list
-              '(("Planet Emacslife" "https://planet.emacslife.com/atom.xml")
-                ("Mastering Emacs" "http://www.masteringemacs.org/feed/")
-                ("Oremacs" "https://oremacs.com/atom.xml")
-                ("EmacsCast" "https://pinecast.com/feed/emacscast")
-                ("Emacs Reddit" "https://www.reddit.com/r/emacs.rss"))))
+              '(("Google AI Blog" "http://feeds.feedburner.com/blogspot/gJZg")
+                ("ML Mastery" "https://machinelearningmastery.com/rss-feed/")
+                ("Xkcd" "https://xkcd.com/atom.xml"))))
 
 (provide 'init-rss)
 
