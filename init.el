@@ -172,5 +172,17 @@ decrease this. If you experience stuttering, increase this.")
 (require 'init-web)
 (require 'init-scala)
 
+
+
+;; set keybindings
+(load-file "/home/sree/.emacs.d/scripts/keybindings.el")
+(put 'dired-find-alternate-file 'disabled nil)
+
+(load-file "/home/sree/.emacs.d/scripts/styling.el")
+(put 'scroll-left 'disabled nil)
+
+(setq user-full-name "Sreejith Sreekumar")
+(setq user-mail-address "sreejith2904@gmail.com")
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; init.el ends here
